@@ -1,0 +1,48 @@
+
+
+import org.apache.spark.{SparkContext, SparkConf}
+
+/**
+  * Created by Mayanka on 09-Sep-15.
+  */
+object SparkWordCount {
+
+  def main(args: Array[String]) {
+
+    System.setProperty("hadoop.home.dir","E:\\winutil");
+
+    val sparkConf = new SparkConf().setAppName("SparkWordCount").setMaster("local[1]")
+
+    val sc=new SparkContext(sparkConf)
+
+    val input=sc.textFile("input")
+
+    val wc=input.map(
+      line=>{
+        val user=line.split(",")(0)
+        val tweet=line.split(",")(1)
+        if(tweet.contains("good") || tweet.contains("best") || tweet.contains("cool"))
+        ("Positive",1)
+        else if(tweet.contains("worst") || tweet.contains("bad") )
+          ("Negative",1)
+          else
+          ("Neutral",1)
+      }
+    )
+
+    val output=wc.reduceByKey(_+_)
+
+    output.saveAsTextFile("output")
+
+    val o=output.collect()
+
+    var s:String="Words:Count \n"
+    o.foreach{case(word,count)=>{
+
+      s+=word+" : "+count+"\n"
+
+    }}
+
+  }
+
+}
