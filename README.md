@@ -13,3 +13,7 @@ https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-4
 
 Lab Report 5
 https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-5
+
+
+Lab Report 6
+https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-6
