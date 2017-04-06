@@ -24,3 +24,6 @@ https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-7
 
 Lab Report 8
 https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-8
+
+Lab Report 9
+https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-9
