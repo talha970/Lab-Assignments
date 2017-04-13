@@ -30,3 +30,6 @@ https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-9
 
 Lab Report 10
 https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-10
+
+Lab Report 11
+https://github.com/talha970/Lab-Assignments/wiki/Lab-Report-11
